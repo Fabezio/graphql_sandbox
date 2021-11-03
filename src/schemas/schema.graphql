@@ -1,0 +1,15 @@
+type Query {
+  greetings(name: String!): String!
+  getUsers: [User]!
+  getUserById(id:Int!):User!
+}
+
+type User {
+  id: ID!
+  fname: String!
+  lname: String!
+  age: Int!
+  email: String!
+}
+
+
